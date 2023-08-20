@@ -1,0 +1,305 @@
+ .right {
+      position: relative;
+      @include flex-column;
+      align-items: center;
+      height: 412px;
+
+      .vector-lines {
+
+
+        .lines-top {
+          display: flex;
+          align-items: self-end;
+        }
+
+        .lines-bottom {
+          display: flex;
+          justify-content: center;
+
+          svg {
+            display: flex;
+
+            path {
+              background: #C084FC;
+              width: 100%;
+
+            }
+          }
+        }
+      }
+
+      .vector-circles {
+        @include flex-row;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          position: absolute;
+
+          path {
+            background: #C084FC;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .vector-graphics {
+        position: absolute;
+        max-width: 414px;
+        max-height: 414px;
+        width: 100%;
+        height: 100%;
+
+        svg:first-child {
+          left: 17%;
+          top: 27%;
+        }
+
+        svg:last-child {
+          left: 10.5%;
+          top: 12%;
+        }
+
+        svg {
+          position: absolute;
+        }
+      }
+
+      .vector-icons {
+        z-index: 10;
+        position: absolute;
+        max-width: 414px;
+        max-height: 414px;
+        height: 100%;
+        width: 100%;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          border-radius: 62.5px;
+          border: 5px solid white;
+          background: white;
+          box-shadow: 0px 0px 3.75px 0px rgba(0, 0, 0, 0.07), 0px 6.25px 9.375px -1.875px rgba(0, 0, 0, 0.10);
+        }
+
+        .group-7 {
+          left: 5%;
+          top: 14%;
+          padding: 5px;
+        }
+
+        .group-9 {
+          left: 33%;
+          top: -2%;
+          padding: 3px;
+        }
+
+        .group-11 {
+          left: 26%;
+          top: 12%;
+          padding: 0 5px;
+        }
+
+        .group-5 {
+          top: 0;
+          right: 22%;
+          padding: 5px;
+        }
+
+        .group {
+          right: 33%;
+          top: 17%;
+          padding: 2px 5px;
+        }
+
+        .group-8 {
+          right: 17%;
+          top: 20%;
+        }
+
+        .app-logo-05 {
+          right: 8%;
+          top: 32%;
+          padding: 9px 0;
+        }
+
+        .wifi {
+          right: -3%;
+          bottom: 37%;
+          padding: 2px 0;
+        }
+
+        .group-1 {
+          right: 13%;
+          bottom: 23%;
+          padding: 2px;
+        }
+
+        .group-6 {
+          right: 33%;
+          bottom: 7%;
+          padding: 5px;
+        }
+
+        .pack {
+          left: 25%;
+          padding: 2px;
+          bottom: 0;
+        }
+
+        .group-10 {
+          right: 45%;
+          bottom: 25%;
+          padding: 5px 10px;
+        }
+
+        .group-2 {
+          left: 9%;
+          bottom: 25%;
+          padding: 6px 4px;
+        }
+
+        .group-4 {
+          left: -4%;
+          top: 45%;
+          padding: 3px;
+        }
+
+        .group-3 {
+          left: 32%;
+          top: 30%;
+          padding: 6px;
+        }
+
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    @mixin flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @mixin flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @mixin SignUpFree {
+      border-radius: 8px;
+      background: #2563EB;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      display: flex;
+
+
+
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 15px;
+      }
+    }
+
+    @mixin headerCenter{
+      width: 330px;
+      text-align: center;
+      margin: 0 auto 30px;
+    }
+
+    @mixin sectionHeaders {
+      font-size: 40px;
+      line-height: 110%;
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    @mixin sectionParagraph {
+      font-size: 16px;
+      font-weight: 400;
+      color: #0F172A;
+      line-height: 140%;
+    }
+
+    .container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 48px 16px;
+    }
+
+    .small-header {
+      padding: 16px;
+      .container {
+        @include flex-row;
+        justify-content: space-between;
+
+        .left {
+          a {
+            @include sectionHeaders;
+            font-size: 32px;
+            text-decoration: none;
+          }
+        }
+        .right {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+    }
+
+    .welcome-section {
+    }
+    .enjoy {
+      display: none;
+    }
+    .teams-needs {
+      display: none;
+    }
+    .problems {
+      display: none;
+    }
+    .improve {
+      display: none;
+    }
+    .promo {
+      display: none;
+    }
+    .footer {
+      display: none;
+    }

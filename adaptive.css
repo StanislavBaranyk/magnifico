@@ -1,34 +1,318 @@
-@media screen and (max-width: 576px) {
-  .small-header {
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    padding: 16px;
-  }
-  .small-header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .small-header .container .left a {
-    text-decoration: none;
-    color: #0F172A;
-    font-weight: 700;
-    font-size: 32px;
-  }
-  .small-header .container .right {
-    display: flex;
-    align-items: center;
+/*///////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0;
   }
   header {
     display: none;
   }
   .welcome-section {
+    padding-top: 80px;
+  }
+  .welcome-section .computer-version {
     display: none;
   }
-  .enjoy {
+  .problems .container {
     display: none;
+  }
+  .promo .container .promo-item .computer-version {
+    display: none;
+  }
+}
+/*///////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 600px) {
+  .section-text {
+    max-width: 465px;
+    width: 100%;
+  }
+  .logos {
+    max-width: 568px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .problems {
+    background-image: none;
+    height: 350px;
+  }
+  .problems .container {
+    background-image: url("images/non-style-container.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    padding: 40px;
+  }
+  .problems .container .section-text {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 24px;
+  }
+  .problems .container .section-text .problems-item h2 {
+    font-size: 40px;
+    line-height: 110%;
+    font-weight: 700;
+    color: #0F172A;
+    color: #FFFFFF;
+  }
+  .problems .container .section-text .problems-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #475569;
+    line-height: 140%;
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  .problems .container .section-text .problems-item button {
+    padding: 12px 0;
+    background: none;
+    display: flex;
+  }
+  .problems .container .section-text .problems-item button a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-right: 16px;
+    line-height: 24px;
+  }
+  .problems .container:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(88, 28, 135, 0.75) 0%, rgba(88, 28, 135, 0.75) 100%);
+    opacity: 0.9;
+  }
+  .improve {
+    padding-top: 92px;
+  }
+}
+/*///////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+  .welcome-section .container .tel-version {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .welcome-section .container .tel-version .tel-item:first-child .field .field-btn a {
+    padding: 0 4px 0 0;
+  }
+  .welcome-section .container .tel-version .tel-item:first-child .logos .logos-container:first-child {
+    padding: 0 16px;
+  }
+  .welcome-section .container .tel-version .tel-item:last-child {
+    display: flex;
+    align-items: center;
+  }
+  .enjoy .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .enjoy .container .item:last-child {
+    width: 40%;
+  }
+  .teams-needs .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .teams-needs .container .section-text .left-item:last-child {
+    display: inline;
+  }
+  .teams-needs .container .right {
+    transform: scale(0.89);
+  }
+  .teams-needs .container .item:first-child {
+    width: 40%;
+  }
+  .problems .container .section-text {
+    width: 60%;
+  }
+  .improve .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .improve .container .right {
+    align-items: center;
+  }
+  .improve .container .item {
+    width: 50%;
+  }
+  .promo .container {
+    justify-content: center;
+  }
+  .promo .container .promo-item {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .container .item1 {
+    width: 100%;
+  }
+  .footer .container .item1 p {
+    padding: 12px 0;
+  }
+  .footer .container .item a h4 {
+    padding: 12px 0;
+  }
+  .footer .container .item ul {
+    gap: 16px;
+  }
+}
+/*///////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 992px) {
+  section {
+    padding: 80px 0;
+  }
+  .container {
+    padding: 0 20px;
+    max-width: 1320px;
+    width: 100%;
+  }
+  .small-header {
+    display: none;
+  }
+  header {
+    display: block;
+  }
+  header .header-nav ul {
+    gap: 24px;
+  }
+  .welcome-section .container .tel-version {
+    display: none;
+  }
+  .welcome-section .container .computer-version {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+  }
+  .welcome-section .container .computer-version .computer-item {
+    width: 50%;
+  }
+  .welcome-section .container .computer-version .computer-item .section-text {
+    max-width: none;
+  }
+  .welcome-section .container .computer-version .computer-item .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .welcome-section .container .computer-version .computer-item .logos .logos-container {
+    padding: 0;
+    justify-content: space-between;
+  }
+  .welcome-section .container .computer-version .computer-item .field .field-form {
+    display: flex;
+  }
+  .enjoy .container {
+    gap: 80px;
+  }
+  .enjoy .container .section-text .right-item p {
+    font-size: 18px;
+  }
+  .enjoy .container .item {
+    width: 50%;
+  }
+  .teams-needs .container {
+    gap: 80px;
+  }
+  .teams-needs .container .section-text {
+    max-width: none;
+  }
+  .teams-needs .container .section-text .left-item p {
+    font-size: 18px;
+  }
+  .teams-needs .container .item:first-child {
+    width: 50%;
+  }
+  .teams-needs .container .item {
+    width: 50%;
+  }
+  .problems {
+    padding: 0;
+    height: 100%;
+  }
+  .problems .container {
+    display: flex;
+    align-items: center;
+    height: 496px;
+  }
+  .improve {
+    padding: 160px 0;
+  }
+  .improve .container {
+    gap: 80px;
+  }
+  .improve .container .left .tabs-improve .tabs-content p {
+    font-size: 18px;
+  }
+  .problems .container .section-text .problems-item p {
+    font-size: 18px;
+  }
+  .promo {
+    background: none;
+    padding: 0 80px;
+  }
+  .promo .container {
+    border-radius: 30px;
+    background: linear-gradient(134deg, #312E81 0%, #1E40AF 0.01%, #1E3A8A 47.44%, #701A75 100%);
+    padding: 40px;
+  }
+  .promo .container .promo-item {
+    width: 100%;
+  }
+  .promo .container .promo-item .tel-version {
+    display: none;
+  }
+  .promo .container .promo-item .computer-item {
+    display: block;
+  }
+  .footer {
+    padding: 40px;
+  }
+}
+/*///////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1200px) {
+  .welcome-section .container .computer-version .section-text h2 {
+    font-size: 72px;
+  }
+  .enjoy .container .section-text .right-item h2 {
+    font-size: 56px;
+  }
+  .teams-needs .container .section-text .left-item h2 {
+    font-size: 56px;
+  }
+  .problems .container .section-text .problems-item h2 {
+    font-size: 56px;
+  }
+  .container {
+    max-width: 1320px;
+    width: 100%;
+  }
+}
+/*///////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 420px) {
+  .teams-needs .container .right {
+    transform: scale(0.89);
   }
 }
 
