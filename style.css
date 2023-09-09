@@ -679,12 +679,124 @@ header .container .sign-up a {
   padding: 6px;
 }
 
-.problems {
-  background-image: url("images/Section.png");
-  height: 434px;
+.problems .problems-none-container {
+  background-image: url("images/non-style-container.jpg");
   width: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  position: relative;
+  display: flex;
+  padding: 48px 24px;
+}
+.problems .problems-none-container .section-text {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 24px;
+}
+.problems .problems-none-container .section-text .problems-item h2 {
+  font-size: 40px;
+  line-height: 110%;
+  font-weight: 700;
+  color: #0F172A;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+.problems .problems-none-container .section-text .problems-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 140%;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 15px;
+}
+.problems .problems-none-container .section-text .problems-item button {
+  padding: 12px 0;
+  background: none;
+  display: flex;
+}
+.problems .problems-none-container .section-text .problems-item button a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-right: 16px;
+  line-height: 24px;
+}
+.problems .problems-none-container:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(88, 28, 135, 0.75) 0%, rgba(88, 28, 135, 0.75) 100%);
+  opacity: 0.9;
+}
+.problems .container {
+  background-image: url("images/non-style-container.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  padding: 40px;
+}
+.problems .container .section-text {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 24px;
+}
+.problems .container .section-text .problems-item h2 {
+  font-size: 40px;
+  line-height: 110%;
+  font-weight: 700;
+  color: #0F172A;
+  color: #FFFFFF;
+}
+.problems .container .section-text .problems-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 140%;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.problems .container .section-text .problems-item button {
+  padding: 12px 0;
+  background: none;
+  display: flex;
+}
+.problems .container .section-text .problems-item button a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-right: 16px;
+  line-height: 24px;
+}
+.problems .container:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(0deg, rgba(88, 28, 135, 0.75) 0%, rgba(88, 28, 135, 0.75) 100%);
+  opacity: 0.9;
 }
 
 .improve .container {
