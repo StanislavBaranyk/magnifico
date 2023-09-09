@@ -35,9 +35,9 @@
     padding: 0;
   }
 
-  header {
-    display: none;
-  }
+  //header {
+  //  display: none;
+  //}
 
   .welcome-section {
     padding-top: 80px;
@@ -288,18 +288,6 @@
     width: 100%;
   }
 
-  .small-header {
-    display: none;
-  }
-  header {
-    display: block;
-
-    .header-nav {
-      ul {
-        gap: 24px;
-      }
-    }
-  }
 
   .welcome-section {
     .container {
@@ -382,7 +370,7 @@
   }
 
   .problems {
-    padding: 0;
+    padding: 0 20px;
     height: 100%;
 
     .container {
@@ -443,6 +431,21 @@
 /*///////////////////////////////////////////////////////////////*/
 
 @media screen and (min-width: 1200px){
+  .small-header {
+    display: none;
+  }
+
+  header {
+
+    .container {
+      .header-nav {
+        ul {
+          gap: 24px;
+        }
+      }
+    }
+  }
+
 
   .welcome-section .container .computer-version .section-text h2 {
     font-size: 72px;
@@ -458,10 +461,17 @@
     font-size: 56px;
   }
 
+  .problems .container .section-text {
+    max-width: 520px;
+    width: 100%;
+  }
+
   .container {
     max-width: 1320px;
     width: 100%;
   }
+
+
 }
 
 /*///////////////////////////////////////////////////////////////*/
@@ -494,8 +504,12 @@
       display: none;
     }
 
-    .container {
-      display: inline-block;
-    }
   }
+}
+
+@media screen and (max-width: 1200px){
+  header {
+    display: none;
+  }
+
 }
